@@ -327,8 +327,7 @@ public class UniversalAnalyticsPlugin extends CordovaPlugin {
             return;
         }
 
-        Tracker tracker = GoogleAnalytics.getInstance(this.cordova.getActivity()).getDefaultTracker();
         tracker.enableAdvertisingIdCollection(isEnabled);
-        callbackContext.success((isEnabled ? "En" : "Dis")+ "abled ad id collection for Display Advertisement");
+        callbackContext.success((isEnabled ? "En" : "Dis") + "abled ad id collection for Display Advertisement");
     }
 }
